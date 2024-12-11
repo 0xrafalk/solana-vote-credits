@@ -34,3 +34,7 @@ tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["json", "env-filter"] }
 sentry = "0.34.0"
 bincode = "1.3.3"  # Added missing dependency
+
+[[bin]]
+name = "solana-vote-credits"
+path = "src/tvc.rs"
