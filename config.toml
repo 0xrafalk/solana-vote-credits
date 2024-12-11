@@ -1,0 +1,43 @@
+rpc_url = "https://api.mainnet-beta.solana.com"
+rpc_timeout_seconds = 91
+rpc_max_concurrent_requests = 51
+
+[[accounts]]
+alias = "Chorus One"
+address = "Chorus6Kis8tFHA7AowrPMcRJk3LbApHTYpgSNXzY5KE"
+
+[[accounts]]
+alias = "Chorus One Lido"
+address = "EogKVYgic8LKAuV1kR9nRqJaS5zpwCvSMfqoehzmAMpK"
+
+[[accounts]]
+alias = "Paradigm"
+address = "GRt2mJZKpK9WXph5HGg4pdgewCYLKitRRSiTkrtHLXV8"
+
+[[accounts]]
+alias = "Blockdaemon"
+address = "FQwewNXahV7MiZcLpY6p1xhUs2acVGQ3U5Xxc7FzV571"
+
+[[accounts]]
+alias = "Kiln"
+address = "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m"
+
+[[accounts]]
+alias = "P2P"
+address = "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk"
+
+[[accounts]]
+alias = "Figment"
+address = "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1"
+
+[[accounts]]
+alias = "Edgevana"
+address = "EdGevanAjM8a6Gg9KxBVrmVdZAUGAZ9xaVd7t9R4H2x"
+
+[[accounts]]
+alias = "Temporal"
+address = "Haz7b47sZBpxh9SwggGndN3fAyNQ1S949BPdxWXS3ab6"
+
+[[accounts]]
+alias = "OKX"
+address = "2tucttroqFNXsrYeMBQ8LfzKNfgwT2rHBzAF6RzbbHEp"

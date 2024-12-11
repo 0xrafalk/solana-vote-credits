@@ -1,0 +1,36 @@
+[package]
+name = "solana-vote-credits"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4.37", features = ["serde"] }
+futures = "0.3.23"
+hyper = { version = "0.14.28", features = ["server"] }
+itertools = "0.10.5"
+reqwest = { version = "0.11.27", features = ["json"] }
+rust_decimal = { version = "1.26.1"}
+scopeguard = "1.1.0"
+serde = { version = "1.0.145", features = ["derive"] }
+serde_json = "1.0.85"
+serde_repr = "0.1.9"
+slog = "2.7.0"         # Updated version
+slog-term = "2.9.1"
+slog-async = "2.7.0"   # Updated version
+solana-client = "=1.18.18"
+solana-sdk = "=1.18.18"
+solana-transaction-status = "=1.18.18"
+solana-vote-program = "1.18.18"
+sqlx = { version = "0.6.3", features = ["runtime-tokio-native-tls", "postgres", "chrono", "offline", "decimal"] }
+tempfile = "3.3.0"
+toml = "0.5.9"
+tokio = "1.35.1"
+clap = { version = "4.5.4", features = ["derive", "env"] }
+anyhow = "1.0.81"
+axum = { version = "0.7.5", features = ["macros"] }
+prometheus = "0.13.3"
+regex = "1.10"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["json", "env-filter"] }
+sentry = "0.34.0"
+bincode = "1.3.3"  # Added missing dependency
