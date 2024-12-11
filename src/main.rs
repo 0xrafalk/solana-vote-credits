@@ -31,9 +31,14 @@ async fn insert_vote_credits(
     max_credits: u64,
     score: f64,
 ) -> Result<()> {
-    query!(
+    sqlx::query!(
         "INSERT INTO timely_vote_credits (alias, epoch, earned_credits, max_possible_credits, score) 
-        VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING;",
+        VALUES ($1, $2, $3, $4, $5) 
+        ON CONFLICT (alias, epoch) 
+        DO UPDATE SET 
+            earned_credits = EXCLUDED.earned_credits,
+            max_possible_credits = EXCLUDED.max_possible_credits,
+            score = EXCLUDED.score;",
         alias,
         epoch as i64,
         earned_credits as i64,
